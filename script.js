@@ -144,7 +144,6 @@ const el = {
   panelB: document.getElementById('panelB'),
   panelALabel: document.getElementById('panelALabel'),
   panelBLabel: document.getElementById('panelBLabel'),
-  scoreLog: document.getElementById('scoreLog'),
   modal: document.getElementById('resultModal'),
   resultText: document.getElementById('resultText'),
   restartBtn: document.getElementById('restartBtn')
@@ -202,13 +201,6 @@ function onAnswer(selectedIndex){
     if(activeTeam === 'A'){ scoreA += 1; el.scoreA.textContent = scoreA; }
     else { scoreB += 1; el.scoreB.textContent = scoreB; }
   }
-  addLogEntry({
-    team: activeTeam,
-    question: q.question,
-    correct: isCorrect,
-    picked: q.options[selectedIndex],
-    answer: q.answer
-  });
   el.nextBtn.disabled = false;
 }
 
@@ -237,17 +229,9 @@ function restart(){
   el.scoreB.textContent = '0';
   setActiveTeam('A');
   el.modal.setAttribute('aria-hidden', 'true');
-  el.scoreLog.innerHTML = '';
   renderQuestion();
 }
 
-function addLogEntry({ team, question, correct, picked, answer }){
-  const li = document.createElement('li');
-  li.className = correct ? 'win' : 'lose';
-  const who = team === 'A' ? 'Team A' : 'Team B';
-  li.innerHTML = `<span class="who">${who}</span>: ${correct ? 'верно ✅' : 'неверно ❌'} — «${question}» · ответ: ${picked}${correct ? '' : ` (нужно: ${answer})`}`;
-  el.scoreLog.prepend(li);
-}
 
 // events
 el.teamA.addEventListener('click', ()=> setActiveTeam('A'));

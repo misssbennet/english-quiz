@@ -21,7 +21,8 @@ body{
 .app{
   max-width:960px;
   margin:0 auto;
-  padding:16px 16px 80px;
+  padding:16px 16px 200px;
+  min-height:100vh;
 }
 
 .header{
@@ -138,30 +139,38 @@ body{
   background:#ffffffc0;
   backdrop-filter: blur(6px);
   border-top:2px dashed #ffd36a;
+  max-height:50vh;
+  overflow-y:auto;
 }
 .score{
   max-width:960px;
   margin:0 auto;
-  padding:10px 16px;
+  padding:12px 16px;
   display:flex;
   align-items:center;
   gap:12px;
   font-weight:800;
+  color:#2d2a3a;
+  background:#ffffff;
+  border:2px solid #ffd36a;
+  border-radius:12px;
+  margin-bottom:8px;
+  box-shadow:0 4px 12px rgba(0,0,0,0.15);
 }
-.log{max-width:960px; margin:0 auto; padding:8px 16px 14px}
-.log-title{font-weight:900; margin:6px 0}
-.log-list{list-style:none; padding:0; margin:0; display:grid; gap:6px}
-.log-list li{background:#fff; border-radius:10px; padding:8px 10px; box-shadow:0 4px 0 rgba(0,0,0,.06)}
-.log-list li .who{font-weight:900}
-.log-list li.win{border-left:6px solid #34c759}
-.log-list li.lose{border-left:6px solid #ff3b30}
 .badge{
   padding:8px 12px;
   border-radius:999px;
-  background:#fff;
+  font-weight:900;
+  color:#ffffff;
 }
-.badge.team-a{border:2px solid var(--primary)}
-.badge.team-b{border:2px solid var(--secondary)}
+.badge.team-a{
+  background:linear-gradient(180deg, #ff8ba7, var(--primary));
+  border:2px solid var(--primary);
+}
+.badge.team-b{
+  background:linear-gradient(180deg, #66e0d2, var(--secondary));
+  border:2px solid var(--secondary);
+}
 
 .modal{
   position:fixed; inset:0;
@@ -189,5 +198,8 @@ body{
   .answers{grid-template-columns:1fr}
   .header{flex-direction:column; align-items:flex-start}
   .teams-panels{grid-template-columns:1fr}
+  .app{padding:16px 16px 250px}
+  .footer{max-height:60vh}
+  .score{flex-direction:column; gap:8px; text-align:center}
 }
 
