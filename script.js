@@ -132,8 +132,7 @@ let scoreB = 0;
 let answered = false;
 
 const el = {
-  teamA: document.getElementById('teamA'),
-  teamB: document.getElementById('teamB'),
+  resetBtn: document.getElementById('resetBtn'),
   qNumber: document.getElementById('qNumber'),
   qText: document.getElementById('questionText'),
   answers: document.getElementById('answers'),
@@ -151,8 +150,6 @@ const el = {
 
 function setActiveTeam(team){
   activeTeam = team;
-  el.teamA.setAttribute('aria-pressed', team === 'A');
-  el.teamB.setAttribute('aria-pressed', team === 'B');
   // подсветка панелей
   const isA = team === 'A';
   el.panelA.classList.toggle('active', isA);
@@ -205,6 +202,10 @@ function onAnswer(selectedIndex){
 }
 
 function nextQuestion(){
+  // Переключаем команду после каждого вопроса
+  activeTeam = activeTeam === 'A' ? 'B' : 'A';
+  setActiveTeam(activeTeam);
+  
   if(currentQuestionIndex < questions.length - 1){
     currentQuestionIndex += 1;
     renderQuestion();
@@ -234,8 +235,7 @@ function restart(){
 
 
 // events
-el.teamA.addEventListener('click', ()=> setActiveTeam('A'));
-el.teamB.addEventListener('click', ()=> setActiveTeam('B'));
+el.resetBtn.addEventListener('click', restart);
 el.nextBtn.addEventListener('click', nextQuestion);
 el.restartBtn.addEventListener('click', restart);
 

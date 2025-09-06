@@ -40,21 +40,19 @@ body{
   letter-spacing:.3px;
 }
 
-.teams{display:flex;gap:8px}
-.team-btn{
+.reset-btn{
   border:0;
   padding:10px 16px;
   border-radius:999px;
-  background:var(--btn);
+  background:linear-gradient(180deg, #ff8b8b, #ff6b6b);
+  color:#fff;
   font-weight:800;
   font-size:16px;
   cursor:pointer;
   transition:transform .08s ease, box-shadow .2s ease;
   box-shadow:0 6px 0 rgba(0,0,0,.1);
 }
-.team-btn[aria-pressed="true"]{transform:translateY(-2px); box-shadow:0 8px 0 rgba(0,0,0,.12)}
-.team-a{color:#fff;background:linear-gradient(180deg, #ff8ba7, var(--primary))}
-.team-b{color:#fff;background:linear-gradient(180deg, #66e0d2, var(--secondary))}
+.reset-btn:hover{transform:translateY(-2px); box-shadow:0 8px 0 rgba(0,0,0,.12)}
 
 .quiz{
   background:#ffffffd8;
