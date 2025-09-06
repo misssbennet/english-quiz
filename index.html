@@ -11,12 +11,42 @@
 </head>
 <body>
     <div class="app">
-        <header class="header">
-            <h1>Весёлая викторина по английскому</h1>
-            <button id="resetBtn" class="reset-btn">🔄 Сброс</button>
-        </header>
+        <!-- Стартовая страница -->
+        <div id="startPage" class="start-page">
+            <div class="start-content">
+                <h1>🎯 Весёлая викторина по английскому</h1>
+                <div class="start-form">
+                    <div class="form-group">
+                        <label for="teamAName">Название команды A:</label>
+                        <input type="text" id="teamAName" placeholder="Например: Львы" value="Team A">
+                    </div>
+                    <div class="form-group">
+                        <label for="teamBName">Название команды B:</label>
+                        <input type="text" id="teamBName" placeholder="Например: Тигры" value="Team B">
+                    </div>
+                    <div class="form-group">
+                        <label for="topicSelect">Выберите тему:</label>
+                        <select id="topicSelect">
+                            <option value="colors">🎨 Цвета</option>
+                            <option value="animals">🐾 Животные</option>
+                            <option value="fruits">🍎 Фрукты и овощи</option>
+                            <option value="phrases">💬 Фразы</option>
+                            <option value="mixed">🎲 Смешанная тема</option>
+                        </select>
+                    </div>
+                    <button id="startGameBtn" class="start-game-btn">Начать игру! 🚀</button>
+                </div>
+            </div>
+        </div>
 
-        <main class="quiz" role="main">
+        <!-- Основная игра -->
+        <div id="gamePage" class="game-page" style="display: none;">
+            <header class="header">
+                <h1 id="gameTitle">Весёлая викторина по английскому</h1>
+                <button id="resetBtn" class="reset-btn">🔄 Сброс</button>
+            </header>
+
+            <main class="quiz" role="main">
             <section class="teams-panels" aria-label="Команды">
                 <div id="panelA" class="panel panel-a active" aria-current="true">
                     <div class="panel-title">Team A</div>
@@ -45,10 +75,10 @@
                 <span class="badge team-a">Team A: <strong id="scoreA">0</strong></span>
                 <span class="badge team-b">Team B: <strong id="scoreB">0</strong></span>
             </div>
-        </footer>
-    </div>
+            </footer>
+        </div>
 
-    <div id="resultModal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="resultTitle" aria-describedby="resultText">
+        <div id="resultModal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="resultTitle" aria-describedby="resultText">
         <div class="modal-content">
             <h2 id="resultTitle">Результат</h2>
             <p id="resultText"></p>
