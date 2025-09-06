@@ -92,157 +92,125 @@ const questionSets = {
     { "question": "How do you say 'Не за что' in English?", "options": ["You're welcome", "No problem", "Don't mention it", "All of the above"], "answer": "All of the above" }
   ],
   
+  school: [
+    { "question": "What day comes after Monday?", "options": ["Sunday", "Tuesday", "Wednesday", "Thursday"], "answer": "Tuesday" },
+    { "question": "What day comes before Friday?", "options": ["Wednesday", "Thursday", "Saturday", "Sunday"], "answer": "Thursday" },
+    { "question": "What is the first day of the week?", "options": ["Monday", "Tuesday", "Sunday", "Saturday"], "answer": "Monday" },
+    { "question": "What day is the weekend?", "options": ["Monday and Tuesday", "Wednesday and Thursday", "Saturday and Sunday", "Friday and Saturday"], "answer": "Saturday and Sunday" },
+    { "question": "What subject do you study numbers in?", "options": ["English", "Math", "Art", "Music"], "answer": "Math" },
+    { "question": "What subject do you study colors and drawing in?", "options": ["Math", "Art", "Science", "English"], "answer": "Art" },
+    { "question": "What subject do you study animals and plants in?", "options": ["Math", "English", "Science", "Art"], "answer": "Science" },
+    { "question": "What subject do you study reading and writing in?", "options": ["Math", "English", "Science", "Art"], "answer": "English" },
+    { "question": "What do you use to write with?", "options": ["Book", "Pencil", "Eraser", "Ruler"], "answer": "Pencil" },
+    { "question": "What do you sit on in class?", "options": ["Desk", "Chair", "Floor", "Table"], "answer": "Chair" },
+    { "question": "What do you put your books in?", "options": ["Backpack", "Pencil", "Eraser", "Ruler"], "answer": "Backpack" },
+    { "question": "What do you use to erase mistakes?", "options": ["Pencil", "Eraser", "Pen", "Ruler"], "answer": "Eraser" },
+    { "question": "What time does school usually start?", "options": ["6 AM", "8 AM", "12 PM", "6 PM"], "answer": "8 AM" },
+    { "question": "What do you eat at school?", "options": ["Lunch", "Dinner", "Breakfast", "Snack"], "answer": "Lunch" },
+    { "question": "What do you play during recess?", "options": ["Games", "Sleep", "Study", "Eat"], "answer": "Games" },
+    { "question": "What do you wear to school?", "options": ["Pajamas", "Uniform", "Swimsuit", "Costume"], "answer": "Uniform" },
+    { "question": "What do you do in the library?", "options": ["Eat", "Sleep", "Read books", "Play games"], "answer": "Read books" },
+    { "question": "What do you use to measure things?", "options": ["Pencil", "Ruler", "Eraser", "Book"], "answer": "Ruler" },
+    { "question": "What do you call your teacher?", "options": ["Mom", "Dad", "Teacher", "Friend"], "answer": "Teacher" },
+    { "question": "What do you do when school ends?", "options": ["Go home", "Stay forever", "Sleep", "Eat"], "answer": "Go home" }
+  ],
+  
+  food: [
+    { "question": "What do you drink when you're thirsty?", "options": ["Food", "Water", "Book", "Toy"], "answer": "Water" },
+    { "question": "What do you eat for breakfast?", "options": ["Dinner", "Cereal", "Lunch", "Snack"], "answer": "Cereal" },
+    { "question": "What is orange and sweet?", "options": ["Apple", "Orange", "Banana", "Grape"], "answer": "Orange" },
+    { "question": "What do you drink that's white and comes from cows?", "options": ["Water", "Milk", "Juice", "Tea"], "answer": "Milk" },
+    { "question": "What is round and red and used in salads?", "options": ["Apple", "Tomato", "Orange", "Banana"], "answer": "Tomato" },
+    { "question": "What do you eat that's made from wheat?", "options": ["Bread", "Meat", "Fruit", "Vegetable"], "answer": "Bread" },
+    { "question": "What is yellow and long and monkeys love?", "options": ["Apple", "Banana", "Orange", "Grape"], "answer": "Banana" },
+    { "question": "What do you drink that's hot and brown?", "options": ["Water", "Coffee", "Milk", "Juice"], "answer": "Coffee" },
+    { "question": "What is green and rabbits love to eat?", "options": ["Carrot", "Lettuce", "Apple", "Banana"], "answer": "Lettuce" },
+    { "question": "What do you eat that's sweet and comes from bees?", "options": ["Sugar", "Honey", "Salt", "Pepper"], "answer": "Honey" },
+    { "question": "What is red and small and grows on bushes?", "options": ["Apple", "Strawberry", "Orange", "Banana"], "answer": "Strawberry" },
+    { "question": "What do you drink that's made from fruits?", "options": ["Water", "Juice", "Milk", "Coffee"], "answer": "Juice" },
+    { "question": "What is white and you put it in coffee?", "options": ["Sugar", "Milk", "Salt", "Pepper"], "answer": "Milk" },
+    { "question": "What do you eat that's made from potatoes?", "options": ["Bread", "Chips", "Rice", "Pasta"], "answer": "Chips" },
+    { "question": "What is green and you eat it with salad?", "options": ["Apple", "Lettuce", "Banana", "Orange"], "answer": "Lettuce" },
+    { "question": "What do you drink that's cold and sweet?", "options": ["Hot tea", "Ice cream", "Cold water", "Warm milk"], "answer": "Cold water" },
+    { "question": "What is brown and you eat it with bread?", "options": ["Butter", "Jam", "Cheese", "Meat"], "answer": "Butter" },
+    { "question": "What do you eat that's round and has cheese on top?", "options": ["Bread", "Pizza", "Cake", "Cookie"], "answer": "Pizza" },
+    { "question": "What is yellow and you put it on bread?", "options": ["Butter", "Jam", "Cheese", "Meat"], "answer": "Butter" },
+    { "question": "What do you drink that's hot and you add sugar?", "options": ["Cold water", "Tea", "Milk", "Juice"], "answer": "Tea" }
+  ],
+  
+  holidays: [
+    { "question": "What holiday is in December with presents?", "options": ["Halloween", "Christmas", "Easter", "Birthday"], "answer": "Christmas" },
+    { "question": "What holiday is in October with costumes?", "options": ["Christmas", "Halloween", "Easter", "Birthday"], "answer": "Halloween" },
+    { "question": "What do you wear on Halloween?", "options": ["Uniform", "Costume", "Pajamas", "Swimsuit"], "answer": "Costume" },
+    { "question": "What do you get on Christmas?", "options": ["Homework", "Presents", "Vegetables", "Medicine"], "answer": "Presents" },
+    { "question": "What sport do you play with a ball and goal?", "options": ["Basketball", "Soccer", "Tennis", "Swimming"], "answer": "Soccer" },
+    { "question": "What sport do you play in water?", "options": ["Running", "Swimming", "Jumping", "Walking"], "answer": "Swimming" },
+    { "question": "What game do you play with cards?", "options": ["Soccer", "Swimming", "Card game", "Running"], "answer": "Card game" },
+    { "question": "What do you do on your birthday?", "options": ["Study", "Work", "Celebrate", "Sleep"], "answer": "Celebrate" },
+    { "question": "What do you eat on your birthday?", "options": ["Vegetables", "Cake", "Medicine", "Homework"], "answer": "Cake" },
+    { "question": "What sport do you play with a racket?", "options": ["Soccer", "Tennis", "Swimming", "Running"], "answer": "Tennis" },
+    { "question": "What do you wear on Halloween to scare people?", "options": ["Nice clothes", "Costume", "Uniform", "Pajamas"], "answer": "Costume" },
+    { "question": "What do you say on Christmas?", "options": ["Happy Halloween", "Merry Christmas", "Happy Birthday", "Good luck"], "answer": "Merry Christmas" },
+    { "question": "What game do you play with dice?", "options": ["Soccer", "Board game", "Swimming", "Running"], "answer": "Board game" },
+    { "question": "What do you do in summer vacation?", "options": ["Study", "Work", "Play and relax", "Sleep all day"], "answer": "Play and relax" },
+    { "question": "What sport do you play with a basket?", "options": ["Soccer", "Basketball", "Tennis", "Swimming"], "answer": "Basketball" },
+    { "question": "What do you give someone on their birthday?", "options": ["Homework", "Presents", "Vegetables", "Medicine"], "answer": "Presents" },
+    { "question": "What do you do on Easter?", "options": ["Study", "Work", "Look for eggs", "Sleep"], "answer": "Look for eggs" },
+    { "question": "What game do you play with a ball and bat?", "options": ["Soccer", "Baseball", "Tennis", "Swimming"], "answer": "Baseball" },
+    { "question": "What do you wear on Christmas?", "options": ["Costume", "Nice clothes", "Uniform", "Pajamas"], "answer": "Nice clothes" },
+    { "question": "What do you do on New Year's Eve?", "options": ["Study", "Work", "Celebrate", "Sleep"], "answer": "Celebrate" }
+  ],
+  
+  home: [
+    { "question": "Where do you cook food?", "options": ["Bedroom", "Kitchen", "Bathroom", "Living room"], "answer": "Kitchen" },
+    { "question": "Where do you sleep?", "options": ["Kitchen", "Bedroom", "Bathroom", "Living room"], "answer": "Bedroom" },
+    { "question": "Where do you take a shower?", "options": ["Kitchen", "Bedroom", "Bathroom", "Living room"], "answer": "Bathroom" },
+    { "question": "Where do you watch TV?", "options": ["Kitchen", "Bedroom", "Bathroom", "Living room"], "answer": "Living room" },
+    { "question": "What do you sit on in the living room?", "options": ["Table", "Sofa", "Bed", "Chair"], "answer": "Sofa" },
+    { "question": "What do you sleep on?", "options": ["Sofa", "Bed", "Table", "Chair"], "answer": "Bed" },
+    { "question": "What do you eat on?", "options": ["Bed", "Table", "Sofa", "Chair"], "answer": "Table" },
+    { "question": "What do you sit on at the table?", "options": ["Bed", "Sofa", "Chair", "Table"], "answer": "Chair" },
+    { "question": "Where do you keep your clothes?", "options": ["Kitchen", "Closet", "Bathroom", "Living room"], "answer": "Closet" },
+    { "question": "What do you use to open doors?", "options": ["Key", "Book", "Toy", "Food"], "answer": "Key" },
+    { "question": "What do you use to see in the dark?", "options": ["Candle", "Lamp", "Flashlight", "All of the above"], "answer": "All of the above" },
+    { "question": "Where do you keep food cold?", "options": ["Oven", "Refrigerator", "Microwave", "Stove"], "answer": "Refrigerator" },
+    { "question": "What do you use to cook food?", "options": ["Refrigerator", "Stove", "Microwave", "Both B and C"], "answer": "Both B and C" },
+    { "question": "Where do you wash dishes?", "options": ["Bedroom", "Kitchen sink", "Bathroom", "Living room"], "answer": "Kitchen sink" },
+    { "question": "What do you use to clean the floor?", "options": ["Broom", "Vacuum", "Mop", "All of the above"], "answer": "All of the above" },
+    { "question": "Where do you keep books?", "options": ["Kitchen", "Bookshelf", "Bathroom", "Refrigerator"], "answer": "Bookshelf" },
+    { "question": "What do you use to brush your teeth?", "options": ["Toothbrush", "Hairbrush", "Broom", "Mop"], "answer": "Toothbrush" },
+    { "question": "Where do you keep your toothbrush?", "options": ["Kitchen", "Bedroom", "Bathroom", "Living room"], "answer": "Bathroom" },
+    { "question": "What do you use to turn on lights?", "options": ["Key", "Switch", "Button", "Both B and C"], "answer": "Both B and C" },
+    { "question": "Where do you keep your toys?", "options": ["Kitchen", "Toy box", "Bathroom", "Refrigerator"], "answer": "Toy box" }
+  ],
+  
   mixed: [
     { "question": "What color is the sky on a clear day?", "options": ["Blue", "Green", "Red", "Yellow"], "answer": "Blue" },
     { "question": "Which animal says 'Meow'?", "options": ["Dog", "Cat", "Cow", "Horse"], "answer": "Cat" },
     { "question": "What fruit is yellow and long?", "options": ["Apple", "Banana", "Grape", "Orange"], "answer": "Banana" },
     { "question": "How do you say 'Привет' in English?", "options": ["Bye", "Hello", "Thanks", "Good night"], "answer": "Hello" },
+    { "question": "What day comes after Monday?", "options": ["Sunday", "Tuesday", "Wednesday", "Thursday"], "answer": "Tuesday" },
+    { "question": "What do you drink when you're thirsty?", "options": ["Food", "Water", "Book", "Toy"], "answer": "Water" },
+    { "question": "What holiday is in December with presents?", "options": ["Halloween", "Christmas", "Easter", "Birthday"], "answer": "Christmas" },
+    { "question": "Where do you cook food?", "options": ["Bedroom", "Kitchen", "Bathroom", "Living room"], "answer": "Kitchen" },
     { "question": "What color is grass?", "options": ["Red", "Green", "Blue", "Orange"], "answer": "Green" },
     { "question": "Which animal is the king of the jungle?", "options": ["Tiger", "Lion", "Elephant", "Monkey"], "answer": "Lion" },
-    { "question": "What vegetable is orange and rabbits love it?", "options": ["Potato", "Carrot", "Onion", "Cabbage"], "answer": "Carrot" },
+    { "question": "What subject do you study numbers in?", "options": ["English", "Math", "Art", "Music"], "answer": "Math" },
+    { "question": "What do you eat for breakfast?", "options": ["Dinner", "Cereal", "Lunch", "Snack"], "answer": "Cereal" },
+    { "question": "What sport do you play with a ball and goal?", "options": ["Basketball", "Soccer", "Tennis", "Swimming"], "answer": "Soccer" },
+    { "question": "Where do you sleep?", "options": ["Kitchen", "Bedroom", "Bathroom", "Living room"], "answer": "Bedroom" },
     { "question": "How do you say 'Спасибо' in English?", "options": ["Sorry", "Please", "Thanks", "Welcome"], "answer": "Thanks" },
-    { "question": "What color is a lemon?", "options": ["Yellow", "Purple", "Pink", "Black"], "answer": "Yellow" },
-    { "question": "Which animal gives us milk?", "options": ["Sheep", "Cow", "Pig", "Dog"], "answer": "Cow" },
-    { "question": "What fruit is green outside and red inside with black seeds?", "options": ["Pear", "Watermelon", "Kiwi", "Peach"], "answer": "Watermelon" },
-    { "question": "How do you say 'Пока' in English?", "options": ["Bye", "Good morning", "Hello", "Good evening"], "answer": "Bye" },
-    { "question": "What color are strawberries?", "options": ["Red", "Brown", "White", "Blue"], "answer": "Red" },
-    { "question": "Which animal has a long trunk?", "options": ["Giraffe", "Elephant", "Rhino", "Hippo"], "answer": "Elephant" },
-    { "question": "Which of these is a fruit?", "options": ["Tomato", "Cucumber", "Potato", "Carrot"], "answer": "Tomato" },
-    { "question": "How do you say 'Извини' in English?", "options": ["Sorry", "Hello", "Yes", "Goodbye"], "answer": "Sorry" },
-    { "question": "What color is snow?", "options": ["Black", "White", "Green", "Orange"], "answer": "White" },
-    { "question": "Which animal is very slow and has a shell?", "options": ["Rabbit", "Snail", "Turtle", "Frog"], "answer": "Turtle" },
-    { "question": "Which fruit is small and purple or green, often used for wine?", "options": ["Grapes", "Plum", "Cherry", "Peach"], "answer": "Grapes" },
-    { "question": "How do you say 'Доброе утро' in English?", "options": ["Good night", "Good morning", "Goodbye", "Hello"], "answer": "Good morning" }
+    { "question": "What do you use to write with?", "options": ["Book", "Pencil", "Eraser", "Ruler"], "answer": "Pencil" },
+    { "question": "What is orange and sweet?", "options": ["Apple", "Orange", "Banana", "Grape"], "answer": "Orange" },
+    { "question": "What do you wear on Halloween?", "options": ["Uniform", "Costume", "Pajamas", "Swimsuit"], "answer": "Costume" },
+    { "question": "What do you sit on in the living room?", "options": ["Table", "Sofa", "Bed", "Chair"], "answer": "Sofa" },
+    { "question": "What do you get on Christmas?", "options": ["Homework", "Presents", "Vegetables", "Medicine"], "answer": "Presents" }
   ]
 };
 
 let questions = [];
 let teamAName = 'Team A';
 let teamBName = 'Team B';
-  {
-    "question": "What color is the sky on a clear day?",
-    "options": ["Blue", "Green", "Red", "Yellow"],
-    "answer": "Blue",
-    "category": "Colors"
-  },
-  {
-    "question": "What color is grass?",
-    "options": ["Red", "Green", "Blue", "Orange"],
-    "answer": "Green",
-    "category": "Colors"
-  },
-  {
-    "question": "What color is a lemon?",
-    "options": ["Yellow", "Purple", "Pink", "Black"],
-    "answer": "Yellow",
-    "category": "Colors"
-  },
-  {
-    "question": "What color are strawberries?",
-    "options": ["Red", "Brown", "White", "Blue"],
-    "answer": "Red",
-    "category": "Colors"
-  },
-  {
-    "question": "What color is snow?",
-    "options": ["Black", "White", "Green", "Orange"],
-    "answer": "White",
-    "category": "Colors"
-  },
-
-  {
-    "question": "What fruit is yellow and long?",
-    "options": ["Apple", "Banana", "Grape", "Orange"],
-    "answer": "Banana",
-    "category": "Fruits & Vegetables"
-  },
-  {
-    "question": "What vegetable is orange and rabbits love it?",
-    "options": ["Potato", "Carrot", "Onion", "Cabbage"],
-    "answer": "Carrot",
-    "category": "Fruits & Vegetables"
-  },
-  {
-    "question": "What fruit is green outside and red inside with black seeds?",
-    "options": ["Pear", "Watermelon", "Kiwi", "Peach"],
-    "answer": "Watermelon",
-    "category": "Fruits & Vegetables"
-  },
-  {
-    "question": "Which of these is a fruit?",
-    "options": ["Tomato", "Cucumber", "Potato", "Carrot"],
-    "answer": "Tomato",
-    "category": "Fruits & Vegetables"
-  },
-  {
-    "question": "Which fruit is small and purple or green, often used for wine?",
-    "options": ["Grapes", "Plum", "Cherry", "Peach"],
-    "answer": "Grapes",
-    "category": "Fruits & Vegetables"
-  },
-
-  {
-    "question": "Which animal says 'Meow'?",
-    "options": ["Dog", "Cat", "Cow", "Horse"],
-    "answer": "Cat",
-    "category": "Animals"
-  },
-  {
-    "question": "Which animal is the king of the jungle?",
-    "options": ["Tiger", "Lion", "Elephant", "Monkey"],
-    "answer": "Lion",
-    "category": "Animals"
-  },
-  {
-    "question": "Which animal gives us milk?",
-    "options": ["Sheep", "Cow", "Pig", "Dog"],
-    "answer": "Cow",
-    "category": "Animals"
-  },
-  {
-    "question": "Which animal has a long trunk?",
-    "options": ["Giraffe", "Elephant", "Rhino", "Hippo"],
-    "answer": "Elephant",
-    "category": "Animals"
-  },
-  {
-    "question": "Which animal is very slow and has a shell?",
-    "options": ["Rabbit", "Snail", "Turtle", "Frog"],
-    "answer": "Turtle",
-    "category": "Animals"
-  },
-
-  {
-    "question": "How do you say 'Привет' in English?",
-    "options": ["Bye", "Hello", "Thanks", "Good night"],
-    "answer": "Hello",
-    "category": "Phrases"
-  },
-  {
-    "question": "How do you say 'Спасибо' in English?",
-    "options": ["Sorry", "Please", "Thanks", "Welcome"],
-    "answer": "Thanks",
-    "category": "Phrases"
-  },
-  {
-    "question": "How do you say 'Пока' in English?",
-    "options": ["Bye", "Good morning", "Hello", "Good evening"],
-    "answer": "Bye",
-    "category": "Phrases"
-  },
-  {
-    "question": "How do you say 'Извини' in English?",
-    "options": ["Sorry", "Hello", "Yes", "Goodbye"],
-    "answer": "Sorry",
-    "category": "Phrases"
-  },
-  {
-    "question": "How do you say 'Доброе утро' in English?",
-    "options": ["Good night", "Good morning", "Goodbye", "Hello"],
-    "answer": "Good morning",
-    "category": "Phrases"
-  }
-];
 
 let currentQuestionIndex = 0;
 let activeTeam = 'A';
@@ -275,13 +243,18 @@ const el = {
 };
 
 function startGame(){
+  console.log('startGame called');
+  
   // Получаем данные из формы
   teamAName = el.teamANameInput.value.trim() || 'Team A';
   teamBName = el.teamBNameInput.value.trim() || 'Team B';
   const selectedTopic = el.topicSelect.value;
   
+  console.log('Team A:', teamAName, 'Team B:', teamBName, 'Topic:', selectedTopic);
+  
   // Загружаем вопросы по выбранной теме
   questions = questionSets[selectedTopic];
+  console.log('Questions loaded:', questions.length);
   
   // Обновляем заголовок игры
   const topicNames = {
@@ -289,6 +262,10 @@ function startGame(){
     animals: 'Животные', 
     fruits: 'Фрукты и овощи',
     phrases: 'Фразы',
+    school: 'Школа',
+    food: 'Еда и напитки',
+    holidays: 'Праздники и увлечения',
+    home: 'Дом и предметы',
     mixed: 'Смешанная тема'
   };
   el.gameTitle.textContent = `Викторина: ${topicNames[selectedTopic]}`;
@@ -406,10 +383,34 @@ function backToStart(){
 
 
 // events
-el.startGameBtn.addEventListener('click', startGame);
-el.resetBtn.addEventListener('click', restart);
-el.nextBtn.addEventListener('click', nextQuestion);
-el.restartBtn.addEventListener('click', backToStart);
-
-// init - показываем стартовую страницу
+document.addEventListener('DOMContentLoaded', function() {
+  console.log('DOM loaded, setting up events');
+  
+  if (el.startGameBtn) {
+    el.startGameBtn.addEventListener('click', startGame);
+    console.log('Start game button event added');
+  } else {
+    console.error('Start game button not found');
+  }
+  
+  if (el.resetBtn) {
+    el.resetBtn.addEventListener('click', restart);
+  }
+  
+  if (el.nextBtn) {
+    el.nextBtn.addEventListener('click', nextQuestion);
+  }
+  
+  if (el.restartBtn) {
+    el.restartBtn.addEventListener('click', backToStart);
+  }
+  
+  // Показываем стартовую страницу
+  if (el.startPage) {
+    el.startPage.style.display = 'flex';
+  }
+  if (el.gamePage) {
+    el.gamePage.style.display = 'none';
+  }
+});
 
